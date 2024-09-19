@@ -8,7 +8,7 @@ public class KafkaSimple {
     private LinkedBlockingDeque<String> messageQueue;
 
     public KafkaSimple() {
-
+        // Required for concurrency
         messageQueue = new LinkedBlockingDeque<>();
     }
 
